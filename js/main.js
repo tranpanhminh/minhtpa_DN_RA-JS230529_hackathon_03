@@ -89,10 +89,8 @@ class PlayerManagement {
             this.renderPlayers();
             // Hiển thị thông báo sau khi Add
             const toastLiveExample = document.getElementById("liveToastNotify");
-            const changeImg = document.querySelector(".rounded");
             const changeToastBody = document.querySelector(".toast-body");
             changeToastBody.innerHTML = "Đã thêm người chơi";
-            changeImg.src = "./images/complete-notify.png";
             bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
         }
         else {

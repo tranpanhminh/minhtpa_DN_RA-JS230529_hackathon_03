@@ -117,12 +117,10 @@ class PlayerManagement {
       const toastLiveExample = document.getElementById(
         "liveToastNotify"
       ) as HTMLElement;
-      const changeImg = document.querySelector(".rounded") as HTMLImageElement;
       const changeToastBody = document.querySelector(
         ".toast-body"
       ) as HTMLDivElement;
       changeToastBody!.innerHTML = "Đã thêm người chơi";
-      changeImg.src = "./images/complete-notify.png";
       bootstrap.Toast.getOrCreateInstance(toastLiveExample).show();
     } else {
       const toastLiveExample = document.getElementById(
