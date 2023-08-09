@@ -62,6 +62,7 @@ taskForm.addEventListener("submit", (event) => {
     const checkInputElement = document.querySelector(
       "#check-input"
     ) as HTMLElement;
+
     checkInputElement.style.display = "block";
   }
   const myArrayJson = JSON.stringify(tasks);
