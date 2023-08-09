@@ -30,6 +30,7 @@ form {
 .container {
     background-color: antiquewhite;
     padding: 50px;
+    height: 1000px;
 }
 
 .list {
