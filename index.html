@@ -4,11 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>ScoreBoard App</title>
 </head>
 
 <body>
+    <div class="background">
+        <header>
+            <section class="point-board">
+                <table>
+                    <tr>
+                        <td>Players:</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Total Points:</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </section>
 
+            <section>
+                <h2>Bảng Điểm</h2>
+            </section>
+
+            <table>
+                <tr>
+                    <td>Trần Phước Anh Minh</td>
+                </tr>
+                <tr>
+                    <td>ĐN_RA-JS230529</td>
+                </tr>
+            </table>
+
+        </header>
+
+        <main>
+            <div>Không còn người chơi!!!</div>
+        </main>
+
+        <div class="add-player-board">
+            <input type="text" placeholder="Enter a player's name" class="input-player">
+            <button class="add-player-btn" onclick="playerManagement.handleAdd()">ADD PLAYER</button>
+        </div>
+    </div>
 </body>
+
+<!-- Live Toast No Player -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToastNotify" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="./images/red-notification-logo.png" class="rounded me-2" alt="...">
+            <strong class="me-auto">Notification</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Không còn người chơi!!!
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 
 </html>
