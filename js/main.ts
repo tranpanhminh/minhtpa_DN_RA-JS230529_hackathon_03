@@ -165,7 +165,7 @@ class PlayerManagement {
       }
     }
 
-    // Set Ranking cho thành viên có điểm cao nhất (Refresh lại trang mới update biểu tượng Cúp vàng cho thành viên có điểm cao nhất)
+    // Set Ranking cho thành viên có điểm cao nhất
     for (let i = 0; i < this.players.length; i++) {
       if (this.players[i].point === maxPoint) {
         this.players[i].ranking = "top-ranking";
